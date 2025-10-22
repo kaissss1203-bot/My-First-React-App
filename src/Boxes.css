@@ -1,0 +1,46 @@
+.cb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #f7f8fb;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .cb-controls {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .cb-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #2d9cdb;
+    color: white;
+    transition: background 0.16s ease;
+  }
+  .cb-btn:hover { background: #207fb3; }
+  
+  .boxes-row {
+    display: flex;
+    /*gap: 20px;          /* GAP: keep in sync with GAP in JS (20px) */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* BOX width must match BOX_WIDTH in JS (100px) */
+  .box {
+    width: 100px;       /* BOX_WIDTH: keep in sync with BOX_WIDTH in JS (100px) */
+    height: 100px;
+    border-radius: 10px;
+    will-change: transform, opacity; /* improve animation smoothness */
+    display: inline-block;
+    box-shadow: 0 6px 20px rgba(10,20,40,0.06);
+  }
